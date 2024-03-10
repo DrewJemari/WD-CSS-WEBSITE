@@ -1,0 +1,104 @@
+@font-face {
+    font-family: myFont;
+    src:url(HarabaraMais.otf)  format("opentype");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    overflow-x: hidden;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-size: 14px;
+    color: #f2f3f4;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.profile-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+}
+
+.profile-button a {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: myFont;
+}
+
+.profile-button a:hover {
+    background-color: #000000;
+}
+
+.profile-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-info h2 {
+    margin-top: 10px;
+    font-family: myFont;
+}
+
+.profile-info p {
+    color: #666;
+    margin: 5px 0;
+    font-family: myFont;
+}

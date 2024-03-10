@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="x-icon" href="dj LOGO.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+        @font-face {
+            font-family: myFont;
+            src:url(HarabaraMais.otf)  format("opentype");
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(bg_image.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 85vh;
+            overflow-x: hidden;
+            padding-bottom: 80px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .cover-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px; 
+            background-image: url(cover_picture.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+
+        .profile-img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #333;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .gallery-button {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .gallery-button a {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: myFont;
+        }
+
+        .gallery-button a:hover {
+            background-color: #000000;
+        }
+
+        .profile-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile-info h2 {
+            margin-top: 10px;
+            font-family: myFont;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin: 5px 0;
+            font-family: myFont;
+        }
+
+        .profile-section {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        .profile-section h3 {
+            margin-bottom: 10px;
+            font-family: myFont, Arial, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto;
+            font-size: 14px;
+            color: #f2f3f4;
+            background-color: #333;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cover-img"></div>
+    <div class="gallery-button">
+      <a href="gallery_page.html"><span style="color: #0086c9;">Pho</span><span style="color: #f99201;">tos</span></a>
+      <a href="infographs_page.html"><span style="color: #0086c9;">Info</span><span style="color: #f99201;">graphs</span></a>
+    </div>
+    <div class="profile-img-container"><img class="profile-img" src="profile_picture.jpg" alt="Profile Picture"></div>
+    <div class="profile-info">
+      <h2><span style="color: #0086c9;">Drew</span><span style="color: #f99201;">Jemari</span></h2>
+    </div>
+    <hr>
+    <div class="profile-section">
+      <h3><span style="color: #0086c9;">Over</span><span style="color: #f99201;">view</span></h3>
+      <p><b>Student #:</b> <i>202311102</i></p>
+      <p><b>Program:</b> <i>B.S. Information Technology</i></p>
+      <p><b>Curriculum Year:</b> <i>2022</i></p>
+    </div>
+    <hr>
+    <div class="profile-section">
+      <h3><span style="color: #0086c9;">Con</span><span style="color: #f99201;">tacts</span></h3>
+      <p><b>Email:</b> <i>drewcullado@gmail.com</i></p>
+      <p><b>Phone #:</b> <i>+63 987-654-3210</i></p>
+    </div>
+    <hr>
+    <div class="profile-section">
+      <h3><span style="color: #0086c9;">Oth</span><span style="color: #f99201;">er</span></h3>
+      <p><b>Birthday:</b> <i>May 11, 2005</i></p>
+      <p><b>Religion:</b> <i>Roman Catholic</i></p>
+      <p><b>Nationality:</b> <i>Filipino</i></p>
+    </div>
+  </div>
+  <footer>
+    Copyright © 2024 DrewJemari. All Rights Reserved
+  </footer>
+</body>
+</html>
